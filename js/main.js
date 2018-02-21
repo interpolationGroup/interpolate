@@ -69,7 +69,7 @@ function loadLevelOne()
 
 function loadLevelTwo()
 {
-	bodyFadeTimer;
+
 	window.location = "webpages/levelTwo.html";
 }
 function loadLevelThree()
