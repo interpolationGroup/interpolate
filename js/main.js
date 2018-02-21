@@ -62,7 +62,7 @@ function playAudio()
 // Load new web page links
 function loadLevelOne()
 {
-	window.location = "interpolate/index.html";
+	window.location = "/index.html";
 	
 }
 
