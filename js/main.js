@@ -83,5 +83,5 @@ function loadLevelFour()
 
 function loadReplayScreen()
 {
-	window.location = "replayScreen.html"
+	window.location = "ReplayScreen.html"
 }
