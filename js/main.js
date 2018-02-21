@@ -70,11 +70,11 @@ function loadLevelOne()
 function loadLevelTwo()
 {
 
-	window.location = "webpages/levelTwo.html";
+	window.location = "webpages/LevelTwo.html";
 }
 function loadLevelThree()
 {
-	window.location = "levelThree.html";
+	window.location = "LevelThree.html";
 }
 function loadLevelFour()
 {
