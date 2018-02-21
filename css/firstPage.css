@@ -1,0 +1,407 @@
+/*@Author Nick Haynes*/
+html body
+{
+	background-color: #41464C;
+	animation: fadeIn 3s;
+}
+
+/*The container holding all the book stuff*/
+#bookHolder
+{
+	width: 100%;
+	text-align: center;
+}
+
+/*The style for the book with the next button up*/
+#bookHolder.nextPageButton
+{
+	width: 100%;
+	text-align: center;
+	margin-left: -10vw;
+	animation: moveBook 1s;
+}
+/*The book cover*/
+#bookCover
+{
+	position: relative;
+	background: #013220;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	height: 80vh;
+	margin-top: 10vh;
+	text-align: center;
+	border: solid black 3px;
+}
+
+/*The spine of the book*/
+#bookSpine
+{
+	position: relative;
+	background:#0C2016;
+	width:8vw;
+	height:80vh;
+	border:solid black 2px;
+	margin-left:42%;
+	margin-top: -.2vh;
+}
+
+/*The styling for the pages*/
+#pageOne
+{
+	position: relative;
+	background: #F8ECC2;
+	border:solid black 2px;
+	margin-left: 18vw;
+	margin-right: 18vw;
+	margin-top: -75vh;
+	height: 70vh;
+}
+
+#pageTwo
+{
+	position: relative;
+	background: #F8ECC2;
+	border:solid black 2px;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	margin-top: -70.5vh;
+	height: 70vh;
+}
+
+/*The third page is split into two divs to give the appearence of seperate pages*/
+#pageThreeLeft
+{
+	position: relative;
+	background: #F8ECC2;
+	border:solid black 2px;
+	margin-left: 24vw;
+	margin-right: 48vw;
+	margin-top: -70.4vh;
+	height: 70vh;
+	z-index: 2;
+}
+#pageThreeRight
+{
+	position: relative;
+	background: #F8ECC2;
+	border:solid black 2px;
+	margin-left: 48vw;
+	margin-right: 24vw;
+	margin-top: -70.6vh;
+	height: 70vh;
+	z-index: 2;
+}
+
+/*The bookmark syling*/
+#bookmark
+{
+	position: relative;
+	background-color: #8B0000;
+	margin-left: 25vw;
+	margin-top: -5vh;
+	height:20vh;
+	width: 15vw;
+	-webkit-clip-path: polygon(17% 0, 17% 100%, 46% 83%, 76% 99%, 76% 0);
+	clip-path: polygon(17% 0, 17% 100%, 46% 83%, 76% 99%, 76% 0);
+	z-index: 1;
+	border: solid black 2px;
+}
+
+p
+{
+	font-size: 2.5vw;
+	font-weight: bold;
+	color: gray;
+	opacity: .8;
+	padding:0;
+	margin:0;
+	display: inline-block;
+}
+p:hover
+{
+	background-color: gray;
+	opacity: .5;
+	color:black;
+}
+
+h1
+{
+	font-size: 8vw;
+}
+
+/*The div that styles the actor*/
+#boxOne
+{
+	padding-top: 2vh;
+	text-align: center;
+	margin-right:2vw; 
+}
+/*The styling fo the interpolation*/
+.interpolateText
+{
+	text-align: left;
+	margin-right:2vw;
+	opacity: 0;
+	margin-right: 11.1vw;
+	margin-left: 1.4vw;
+	font-size: 2.5vw;
+	display: inline;
+	color: red;
+	text-shadow: 0 0 40px #FF0000;
+}
+.interpolateText:hover
+{
+	background-color: gray;
+	opacity: .5;
+	color:white;
+}
+
+/*The tutorial div that creates the moving arrow*/
+#tutorialClick
+{
+	-webkit-clip-path: polygon(36% 43%, 60% 44%, 60% 32%, 100% 50%, 60% 71%, 60% 61%, 36% 60%);
+	clip-path: polygon(36% 43%, 60% 44%, 60% 32%, 100% 50%, 60% 71%, 60% 61%, 36% 60%);
+	height:8vh;
+	width: 4vw;
+	margin-left:-3vw;
+	background: black;
+	position: absolute;
+	animation: clickThis 1s;
+	animation-iteration-count: infinite;
+}
+
+#tutorialClickTwo
+{
+	-webkit-clip-path: polygon(36% 43%, 60% 44%, 60% 32%, 100% 50%, 60% 71%, 60% 61%, 36% 60%);
+	clip-path: polygon(36% 43%, 60% 44%, 60% 32%, 100% 50%, 60% 71%, 60% 61%, 36% 60%);
+	height:8vh;
+	width: 4vw;
+	margin-left:-3vw;
+	background: black;
+	position: absolute;
+	animation: clickThis 1s;
+	animation-iteration-count: infinite;
+
+}
+
+#tutorialClickThree
+{
+	-webkit-clip-path: polygon(36% 43%, 60% 44%, 60% 32%, 100% 50%, 60% 71%, 60% 61%, 36% 60%);
+	clip-path: polygon(36% 43%, 60% 44%, 60% 32%, 100% 50%, 60% 71%, 60% 61%, 36% 60%);
+	height:8vh;
+	width: 4vw;
+	margin-left:-3vw;
+	background: black;
+	position: absolute;
+	animation: clickThis 1s;
+	animation-iteration-count: infinite;
+
+}
+
+#tutorialClickFour
+{
+	-webkit-clip-path: polygon(36% 43%, 60% 44%, 60% 32%, 100% 50%, 60% 71%, 60% 61%, 36% 60%);
+	clip-path: polygon(36% 43%, 60% 44%, 60% 32%, 100% 50%, 60% 71%, 60% 61%, 36% 60%);
+	height:8vh;
+	width: 4vw;
+	margin-left:-3vw;
+	background: black;
+	position: absolute;
+	animation: clickThis 1s;
+	animation-iteration-count: infinite;
+
+}
+
+#tutorialClickFive
+{
+	-webkit-clip-path: polygon(36% 43%, 60% 44%, 60% 32%, 100% 50%, 60% 71%, 60% 61%, 36% 60%);
+	clip-path: polygon(36% 43%, 60% 44%, 60% 32%, 100% 50%, 60% 71%, 60% 61%, 36% 60%);
+	height:8vh;
+	width: 4vw;
+	margin-left:-3vw;
+	background: black;
+	position: absolute;
+	animation: clickThis 1s;
+	animation-iteration-count: infinite;
+
+}
+
+#tutorialClickSix
+{
+	-webkit-clip-path: polygon(36% 43%, 60% 44%, 60% 32%, 100% 50%, 60% 71%, 60% 61%, 36% 60%);
+	clip-path: polygon(36% 43%, 60% 44%, 60% 32%, 100% 50%, 60% 71%, 60% 61%, 36% 60%);
+	height:8vh;
+	width: 4vw;
+	margin-left:-3vw;
+	background: black;
+	position: absolute;
+	animation: clickThis 1s;
+	animation-iteration-count: infinite;
+
+}
+
+
+
+/*The regular visible text*/
+.textLines
+{
+	text-align: center;
+	margin-right:2vw;
+}
+
+
+#replayHolder
+{
+	width: 100%;
+	text-align: center;
+	margin-top: 20%;
+}
+#replayButton
+{
+	position: relative;
+	-webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+	height: 15vh;
+	width: 15vw;
+	background: black;
+	opacity: 1;
+	animation: replayButton 2s;
+	animation-iteration-count: infinite;
+	text-align: center;
+	margin-left: 40vw;
+	
+	/*Rotates the arrow*/
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
+
+/*The animations for the divs*/
+
+/*Interpolation fade-ins*/
+@keyframes interpolateFadeIn
+{
+	0%{opacity: .5; color: red;}
+	50%{opacity: 1; color: red;}
+	100%{opacity: .5; color: red;}
+
+}
+/*Firefox*/
+@-moz-keyframes interpolateFadeIn
+{
+	0%{opacity: .5; color: red;}
+	50%{opacity: 1; color: red;}
+	100%{opacity: .5; color: red;}
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes interpolateFadeIn 
+{
+  0% { opacity: .5; color: red; }
+  25% {opacity: .5; color: red; }
+  50% { opacity: .5; color: red; }
+  100%   { opacity: .5; color: red; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes interpolateFadeIn 
+{
+  0% { opacity: .5; color: red; }
+  25% { opacity: .5; color: red; }
+  50% { opacity: .5; color: red; }
+  100% { opacity: .5; color: red; }
+}
+
+
+/*The aniamtion to move the book to make room for the button*/
+@keyframes moveBook
+{
+	0%{margin-left: 0vw;}
+	100%{margin-left:-10vw;}
+}
+
+/*Firefox*/
+@-moz-keyframes moveBook
+{
+	0%{margin-left: 0vw;}
+	100%{margin-left:-10vw;}
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes moveBook 
+{
+  0%{margin-left: 0vw;}
+  100%{margin-left:-10vw;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes moveBook 
+{
+  0%{margin-left: 0vw;}
+  100%{margin-left:-10vw;}
+}
+/*The animation to make the next level button fade in*/
+@keyframes nextButtonFadein
+{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+/*The animation to signify user to click the interpolated data*/
+@keyframes clickThis
+{
+	0%{margin-left: -3vw;}
+	50%{margin-left: -4vw;}
+	100%{margin-left: -3vw;}
+}
+
+@keyframes replayButton
+{
+	0%{margin-left: 40vw;}
+	50%{margin-left: 38vw;}
+	100%{margin-left: 40vw;}
+}
+
+/*body fade in*/
+@keyframes fadeIn
+{
+	0%{opacity: 0;}
+	25%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+/*body fade out*/
+@keyframes fadeOut
+{
+	0%{opacity: 1;}
+	25%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
+/*The button to go to the next level*/
+.nextButton
+{
+	position: relative;
+	margin-left: 80vw;
+	margin-top: -500vh;
+	-webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+	height: 15vh;
+	width: 15vw;
+	background: black;
+	opacity: 0;
+}
+
+/*The div switched to by the button to reveal the next page button*/
+.nextButton.revealed
+{
+	position: relative;
+	margin-left: 80vw;
+	margin-top: -50vh;
+	-webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+	height: 15vh;
+	width: 15vw;
+	background: black;
+	opacity: 1;
+	animation: nextButtonFadein 2s;
+}
